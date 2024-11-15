@@ -1,0 +1,77 @@
+/* 全局樣式 */
+body {
+    background-color: #eeede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 左邊面板 */
+.left-panel {
+    width: 30%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.photo-panel {
+    flex: 1;
+    background-image: url('1280.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 右邊面板 */
+.right-panel {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.album-row {
+     display: flex;
+     justify-content: space-between;
+      flex-wrap: wrap;
+}
+.album-item {
+      text-align: center;
+      margin: 10px;
+}
+
+.album-row img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.description {
+     margin-top: 2px;
+     font-size: 10px;
+ }
+
+
+
