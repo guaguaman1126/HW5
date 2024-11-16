@@ -45,6 +45,7 @@ body {
     width: 70%;
     padding: 20px;
     background-color: #ffffff;
+    height:auto;
 }
 
 h2 {
@@ -72,6 +73,55 @@ h2 {
      margin-top: 2px;
      font-size: 10px;
  }
+/* 手機排版調整 */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: auto;
+    }
+
+    .left-panel {
+        margin-bottom: 20px;
+        
+    }
+}
+
+    }
+
+    .photo-panel {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .album-row img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    body {
+        padding: 10px;
+
+    }
+}
+
+    }
+
+    .text-content {
+        padding: 10px;
+    }
+}
 
 
 
