@@ -27,7 +27,7 @@ body {
 
 .photo-panel {
     flex: 1;
-    background-image: url('1280.jpeg');
+    background-image: url(1280.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -75,9 +75,19 @@ h2 {
  }
 /* 手機排版調整 */
 @media (max-width: 768px) {
+    
+    .photo-panel {
+    height: 300px; /* 根據需求調整高度 */
+    background-image: url('1280.jpeg');
+    background-size: cover; /* 或 contain */
+    background-position: center;
+    }
+
+
+    
     .main-container {
         flex-direction: column;
-        height: auto;
+        height: 100%;
     }
 
     .left-panel,
@@ -87,20 +97,14 @@ h2 {
 
     .left-panel {
         margin-bottom: 20px;
-        
-    }
-}
-
-    }
-
-    .photo-panel {
-        height: 200px;
     }
 
     h2 {
         font-size: 1.2em;
     }
-
+    h1 {
+        margin-bottom: 400px;
+    }
     .album-row img {
         width: 80px;
         height: 80px;
@@ -112,16 +116,13 @@ h2 {
 
     body {
         padding: 10px;
-
-    }
-}
-
     }
 
     .text-content {
         padding: 10px;
     }
 }
+
 
 
 
